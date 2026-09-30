@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dataset (too large for GitHub)
+data/raw/*
+data/processed/*
+data/splits/*
+!data/raw/README.md
+!data/processed/README.md
+
+# Trained models (we'll decide later, once we know their size)
+*.keras
+*.h5
