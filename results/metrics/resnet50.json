@@ -1,0 +1,21 @@
+{
+  "model": "resnet50",
+  "parameters": 23595908,
+  "training_time_seconds": 2656.4,
+  "epochs_run": 4,
+  "best_epoch": 4,
+  "validation": {
+    "accuracy": 0.8776091081593927,
+    "precision_macro": 0.8758708560764772,
+    "recall_macro": 0.8787386461446951,
+    "f1_macro": 0.8766875555990675,
+    "roc_auc_ovr": 0.9777038814494687
+  },
+  "test": {
+    "accuracy": 0.810625,
+    "precision_macro": 0.8148744561295639,
+    "recall_macro": 0.810625,
+    "f1_macro": 0.8030235252321256,
+    "roc_auc_ovr": 0.9532609375000001
+  }
+}
