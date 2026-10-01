@@ -25,3 +25,9 @@ NUM_CLASSES = len(CLASS_NAMES)
 MANIFEST_PATH = PROJECT_ROOT / "data" / "processed" / "dataset_manifest.csv"
 SPLITS_DIR = PROJECT_ROOT / "data" / "splits"
 MODELS_DIR = PROJECT_ROOT / "models"
+
+# ---------- Training settings ----------
+EPOCHS = 20                    # maximum epochs (early stopping may stop sooner)
+LEARNING_RATE = 1e-3
+EARLY_STOPPING_PATIENCE = 5    # stop if validation loss does not improve for 5 epochs
+METRICS_DIR = PROJECT_ROOT / "results" / "metrics"

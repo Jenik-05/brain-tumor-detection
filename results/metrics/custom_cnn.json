@@ -1,0 +1,21 @@
+{
+  "model": "custom_cnn",
+  "parameters": 110276,
+  "training_time_seconds": 2192.6,
+  "epochs_run": 7,
+  "best_epoch": 2,
+  "validation": {
+    "accuracy": 0.5740037950664136,
+    "precision_macro": 0.5783771508707897,
+    "recall_macro": 0.5748789126783005,
+    "f1_macro": 0.5359942372657118,
+    "roc_auc_ovr": 0.836516647041466
+  },
+  "test": {
+    "accuracy": 0.565,
+    "precision_macro": 0.5851950747817506,
+    "recall_macro": 0.565,
+    "f1_macro": 0.5131131194748362,
+    "roc_auc_ovr": 0.8081869791666667
+  }
+}
