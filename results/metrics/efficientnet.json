@@ -1,0 +1,21 @@
+{
+  "model": "efficientnet",
+  "parameters": 4054695,
+  "training_time_seconds": 1590.6,
+  "epochs_run": 6,
+  "best_epoch": 5,
+  "validation": {
+    "accuracy": 0.8111954459203036,
+    "precision_macro": 0.8241364914374001,
+    "recall_macro": 0.8099416148464724,
+    "f1_macro": 0.796536856755073,
+    "roc_auc_ovr": 0.9665761256532963
+  },
+  "test": {
+    "accuracy": 0.755,
+    "precision_macro": 0.7622489499529493,
+    "recall_macro": 0.755,
+    "f1_macro": 0.7312088998588832,
+    "roc_auc_ovr": 0.9435671874999999
+  }
+}
