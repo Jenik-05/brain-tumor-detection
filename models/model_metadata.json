@@ -1,0 +1,13 @@
+{
+  "selected_model": "ResNet50",
+  "model_file": "resnet50.keras",
+  "input_size": [
+    224,
+    224
+  ],
+  "num_classes": 4,
+  "selection_rule": "highest validation macro-F1",
+  "validation_f1_macro": 0.8766875555990675,
+  "test_accuracy": 0.810625,
+  "test_f1_macro": 0.8030235252321256
+}

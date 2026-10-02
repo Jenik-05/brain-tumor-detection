@@ -4,15 +4,19 @@ import tensorflow as tf
 from src import config
 
 
-def load_and_preprocess(filepath, label):
-    """One image file -> (224x224x3 float image with values 0-255, label)."""
-    file_bytes = tf.io.read_file(filepath)
+def preprocess_bytes(file_bytes):
+    """Image file content (bytes) -> 224x224x3 float image with values 0-255."""
     # channels=1 -> grayscale. Handles RGB, grayscale, RGBA and palette images,
     # so colour-format differences between classes disappear.
     image = tf.io.decode_image(file_bytes, channels=1, expand_animations=False)
     image = tf.image.resize(image, config.IMAGE_SIZE, antialias=True)
     # Pretrained models expect 3 channels: repeat the gray channel 3 times.
-    image = tf.image.grayscale_to_rgb(image)
+    return tf.image.grayscale_to_rgb(image)
+
+
+def load_and_preprocess(filepath, label):
+    """One image file path -> (preprocessed image, label)."""
+    image = preprocess_bytes(tf.io.read_file(filepath))
     return image, label
 
 

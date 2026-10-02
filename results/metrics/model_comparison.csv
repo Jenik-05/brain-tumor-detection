@@ -1,0 +1,4 @@
+Model,Parameters,Epochs,Training time (min),Val accuracy,Val F1,Test accuracy,Test precision,Test recall,Test F1,Test ROC-AUC
+Custom CNN,110276,7,36.5,0.574,0.536,0.565,0.5852,0.565,0.5131,0.8082
+ResNet50,23595908,4,44.3,0.8776,0.8767,0.8106,0.8149,0.8106,0.803,0.9533
+EfficientNetB0,4054695,6,26.5,0.8112,0.7965,0.755,0.7622,0.755,0.7312,0.9436
